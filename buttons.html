@@ -6,12 +6,21 @@
     <title>buttons</title>
 </head>
 <body>
-    <a href="page2.html">
-        <button style="background-color: rgb(60, 171, 239); border: none;
+    
+        <button onclick="doSomething()" style="background-color: rgb(60, 171, 239); border: none;
     font-size: 16px; height: 40px; width: 80px;
     border-radius: 20px; color: white;">
         Click me
     </button>
-    </a>
+
+    <p id="last">
+        The end
+    </p>
+
+    <script>
+        function doSomething(){
+            document.getElementById("last").innerHTML = "Have a nice life";
+        }
+    </script>
 </body>
 </html>
